@@ -1,0 +1,12 @@
+Build a production-grade TypeScript Express REST API in this directory. This closes two portfolio gaps at once: TypeScript and Node.js/Express — both frequent requirements in Bengaluru startup backend and full-stack intern postings.
+
+What to build — one small but real domain (a URL shortener with click analytics, or a notes API with sharing; pick one and keep it coherent):
+- Strict TypeScript throughout (strict mode enabled, no implicit any), Express 5, Zod request validation, JWT auth (register and login with bcrypt password hashing), Postgres via Prisma with a docker-compose provided database, and a clean layered structure (routes, controllers, services).
+- Full CRUD with pagination, filtering, and correct HTTP status codes; centralized error-handling middleware; request logging.
+- Test suite with Vitest (or Jest) plus Supertest: 15 or more tests covering auth flows, CRUD happy paths, validation failures, and auth-guard rejections. All must pass.
+- Multi-stage Dockerfile plus docker-compose.yml (api plus postgres), and a documented .env.example.
+- README.md with architecture overview, an API endpoint table, and how to run locally and with Docker.
+
+Rules: npm for everything, reproducible from npm install. Hand-write the project structure rather than generating it from a scaffolding CLI.
+
+When done: create a PUBLIC GitHub repository named Shashank-VK/ts-express-api using gh repo create, push the main branch, and print the repository URL as the final line.
